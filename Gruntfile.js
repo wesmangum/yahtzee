@@ -108,4 +108,3 @@ module.exports = function(grunt){
   grunt.registerTask('build', ['clean', 'jshint:all', 'copy:jssource', 'jade:build', 'less:build','copy:jsvendor', 'copy:css', 'copy:media']);
   grunt.registerTask('default', ['build', 'watch']);
 };
-

@@ -1,5 +1,5 @@
 {
-  "name": "application-name",
+  "name": "client-template",
   "version": "0.0.1",
   "private": true,
   "scripts":{
@@ -9,14 +9,13 @@
     "connect": "*"
   },
   "devDependencies":{
-    "grunt": "*",
+    "grunt"               : "*",
     "grunt-contrib-jshint": "*",
-    "jshint-stylish": "*",
-    "grunt-contrib-watch": "*",
-    "grunt-contrib-copy": "*",
-    "grunt-contrib-jade": "*",
-    "grunt-contrib-less": "*",
-    "grunt-contrib-clean": "*"
+    "jshint-stylish"      : "*",
+    "grunt-contrib-watch" : "*",
+    "grunt-contrib-copy"  : "*",
+    "grunt-contrib-jade"  : "*",
+    "grunt-contrib-less"  : "*",
+    "grunt-contrib-clean" : "*"
   }
 }
-
