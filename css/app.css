@@ -1,0 +1,105 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url(http://fonts.googleapis.com/css?family=Exo:400,700);
+body {
+  background-image: url('../media/bg.svg');
+  background-size: cover;
+  background-attachment: fixed;
+}
+html,
+button,
+input,
+select,
+textarea,
+.pure-g [class*="pure-u"] {
+  /* Set your content font stack here: */
+  font-family: 'Tauri', sans-serif;
+}
+h1 {
+  font-size: 80px;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 5px black;
+}
+input {
+  margin-right: 5px;
+}
+footer {
+  height: 100px;
+}
+.button-success,
+.button-error,
+.button-warning,
+.button-secondary {
+  color: white;
+  border-radius: 4px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+.button-success {
+  background: #52e365;
+}
+.button-error {
+  background: #d2734e;
+}
+.button-warning {
+  background: #df7514;
+}
+.button-secondary {
+  background: rgba(108, 67, 223, 0.55);
+}
+.button-xsmall {
+  font-size: 50%;
+}
+.button-small {
+  font-size: 85%;
+}
+.button-large {
+  font-size: 110%;
+}
+.button-xlarge {
+  font-size: 150%;
+}
+.pure-form {
+  text-align: center;
+}
+.arrowkeys {
+  text-align: center;
+}
+.avatar {
+  text-align: center;
+  width: 35px;
+  height: 35px;
+}
+.pure-table {
+  background: white;
+}
+.horizontal {
+  background: rgba(238, 202, 0, 0.3) !important;
+}
+.vertical {
+  background: rgba(221, 6, 0, 0.3) !important;
+}
+#dice {
+  margin: 20px auto;
+  text-align: center;
+}
+.dice {
+  width: 100px;
+  height: 100px;
+  margin-right: 8px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 13px;
+}
+.frozen {
+  background: lightblue;
+  opacity: 0.7;
+}
+#roll-btn {
+  text-align: center;
+  margin-bottom: 12px;
+}
+#game {
+  text-align: center;
+  margin: 0 auto;
+}
