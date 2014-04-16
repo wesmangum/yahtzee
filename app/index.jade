@@ -3,22 +3,72 @@ html(lang='en')
   head
     meta(charset='utf-8')
     meta(name='viewport', content='width=device-width, initial-scale=1')
-    title Pure Template
+    title Yahtzee!
     link(rel='stylesheet', href='http://yui.yahooapis.com/pure/0.5.0-rc-1/pure-min.css')
     link(rel='stylesheet', href='http://yui.yahooapis.com/pure/0.5.0-rc-1/grids-responsive-min.css')
-    link(rel='stylesheet', href='./css/app.css')
+    link(rel='stylesheet', href='css/app.css')
   body
-    h1 Pure Template
+    h1 Yahtzee!
 
     .pure-g
-      .pure-u-1-2
-      .pure-u-1-2
-        a.pure-button(href='http://qrohlf.com/trianglify/') Background SVG Image
+      .pure-u-1
+        form.pure-form
+          fieldset
+            h3 New Player
+            input#username(type="text", placeholder="Username")
+            input#avatar(type="text", placeholder="Avatar URL")
+            button#add.pure-button.pure-button-primary Add Player
 
     .pure-g
-      .pure-u-1-3: a.pure-button.button-success.button-xsmall(href='http://stage.purecss.io/') Documentation
-      .pure-u-1-3: a.pure-button.button-error.button-xlarge(href='http://stage.purecss.io/grids/') Grids
-      .pure-u-1-3: a.pure-button.button-secondary(href='http://stage.purecss.io/grids/#using-grids-with-custom-fonts') Changing Fonts
+      .pure-u-1
+        form.pure-form
+          fieldset
+            h3 Scoring
+            input#score(type="text", placeholder="Score")
+            button#add-score.pure-button.pure-button-primary Add Score
 
-    script(src='./js/vendor/jquery-2.1.0.js')
-    script(src='./js/source/main.js')
+    .pure-g
+      .pure-u-1
+        #dice
+          img.dice(src="media/Dice-1.svg.png", alt="")
+          img.dice(src="media/Dice-1.svg.png", alt="")
+          img.dice(src="media/Dice-1.svg.png", alt="")
+          img.dice(src="media/Dice-1.svg.png", alt="")
+          img.dice(src="media/Dice-1.svg.png", alt="")
+      .pure-u-1
+        #roll-btn
+          button#roll.pure-button.pure-button-primary.button-xlarge Roll!
+
+    .pure-g
+      .pure-u-1
+        .arrowkeys
+          img.arrow#left(src='media/arrowleft.png')
+          img.arrow#up(src='media/arrowup.png')
+          img.arrow#down(src='media/arrowdown.png')
+          img.arrow#right(src='media/arrowright.png')
+
+    .pure-g
+      .pure-u-1
+        table#game.pure-table.pure-table-bordered
+          thead
+            tr
+              th Avatar
+              th Name
+              th 1
+              th 2
+              th 3
+              th 4
+              th 5
+              th 6
+              th 7
+              th 8
+              th 9
+              th 10
+              th 11
+              th 12
+              th 13
+              th Total
+          tbody
+
+    script(src='js/vendor/jquery-2.1.0.js')
+    script(src='js/source/main.js')
